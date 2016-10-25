@@ -34,12 +34,14 @@ This module's unit tests require:
 Authors
 -------
 
-Toby Corkindale, Kazuho Oku, and various contributors.
+Colin Newell, Toby Corkindale, Kazuho Oku, and various contributors.
 
 Copyright and License
 ---------------------
 
-This version copyright © 2011-2014 Toby Corkindale.
+Current version copyright © 2016 Colin Newell
+
+Forked from Test::PostgreSQL at version 1.06 which was copyright © 2011-2016 Toby Corkindale.
 
 Versions 0.09 and earlier were copyright (C) 2009 Cybozu Labs, Inc.
 

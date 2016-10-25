@@ -10,7 +10,7 @@ use DBI;
 use File::Temp qw(tempdir);
 use POSIX qw(SIGTERM SIGKILL WNOHANG setuid);
 
-our $VERSION = '1.06';
+our $VERSION = '2.01';
 
 # Various paths that Postgres gets installed under, sometimes with a version on the end,
 # in which case take the highest version. We append /bin/ and so forth to the path later.
@@ -362,8 +362,16 @@ Test::Postgresql58 - PostgreSQL runner for tests
 C<Test::Postgresql58> automatically setups a PostgreSQL instance in a temporary
 directory, and destroys it when the perl script exits.
 
-This module is a fork of Test::postgresql, which was abandoned by its author
-several years ago.
+This module is a fork of L<Test::PostgreSQL>, to retain support for Perl 5.8 and
+other scenarios.  This is intended to be a lightly maintained module designed 
+to support the existing projects that used Test::Postgresql or 
+Test::PostgreSQL.  If you believe there is a fundamental design problem with 
+this module start a new one or contribute to an alternative existing module.  
+The primary motivation for this fork is simply to avoid changes to existing 
+modules (except the module name change).
+
+Bug fixes, and fixes to ensure it continues to work with newer versions of 
+Postgres should still be welcome.
 
 =head1 FUNCTIONS
 
@@ -448,11 +456,13 @@ L<DBD::Pg>.
 
 =head1 AUTHOR
 
-Toby Corkindale, Kazuho Oku, and various contributors.
+Colin Newell, Toby Corkindale, Kazuho Oku, and various contributors.
 
 =head1 COPYRIGHT
 
-Current version copyright © 2012-2014 Toby Corkindale.
+Current version copyright © 2016 Colin Newell
+
+Previous versions copyright © 2012-2014 Toby Corkindale.
 
 Previous versions copyright (C) 2009 Cybozu Labs, Inc.
 
