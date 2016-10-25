@@ -1,5 +1,13 @@
 Revision history for Perl extension Test::Postgresql58.
 
+{{$NEXT}}
+
+2.01      2016-10-25 17:17:37+01:00 Europe/London
+   - Forked from Test::PostgreSQL 1.06 for Perl 5.8 compat
+   - Fix for RT#107957 provided by SysPete.
+
+1.06  May 13, 2015
+
 1.05  Tue Sep 16 12:23:27 2014
     - Refactor how binaries are located on the path
     - Fix connection error when connecting too fast
